@@ -45,11 +45,11 @@ the info keys from the original call
  #define PMIX_SPAWN_RESTART_IN_NAMESPACE 2
 
  @param alloc_info - contains info keys specific to allocation reserved for the spawn
-#define PMIX_ALLOC_ID              "pmix.allocid"           // uint32 - allocation id provided by the RM
-#define PMIX_NET_TOPO              "pmix.ntopo"             // (char*) xml-representation of network topology
-#define PMIX_LOCAL_TOPO            "pmix.ltopo"             // (char*) xml-representation of local node topology
-#define PMIX_NODE_LIST             "pmix.nlist"             // (char*) comma-delimited list of nodes running procs for this job
-#define PMIX_TOPOLOGY              "pmix.topo"              // (hwloc_topology_t) pointer to the PMIx client's internal topology object
+PMIX_ALLOC_ID              "pmix.allocid"           // uint32 - allocation id provided by the RM
+PMIX_NET_TOPO              "pmix.ntopo"             // (char*) xml-representation of network topology
+PMIX_LOCAL_TOPO            "pmix.ltopo"             // (char*) xml-representation of local node topology
+ PMIX_NODE_LIST             "pmix.nlist"             // (char*) comma-delimited list of nodes running procs for this job
+ PMIX_TOPOLOGY              "pmix.topo"              // (hwloc_topology_t) pointer to the PMIx client's internal topology object
  pmix_status_t PMIx_Spawn_nb(uint32 pmix_spawn_directive,
                           const pmix_info_t job_info[], size_t ninfo,
                           const pmix_info_t alloc_info[], size_t ninfo,
@@ -69,5 +69,7 @@ Provide a reference link to the accompanying Pull Request (PR) against the PMIx 
 
 ## Author(s)
 Annapurna Dasari
+
 Intel Inc.
+
 annu13@github
